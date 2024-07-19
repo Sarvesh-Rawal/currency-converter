@@ -56,7 +56,7 @@ const exchangeRate = async () => {
     let exchangeValue = data['data'][toCurrVal]['value'];
     console.log(exchangeValue);
     console.log(amtval);
-    let finalAmt = amtval * exchangeValue;
+    let finalAmt = (amtval * exchangeValue).toFixed(2);
     console.log(finalAmt);
     msg.classList.remove('hide');
     msg.innerText = `${amtval} ${fromCurrVal} = ${finalAmt} ${toCurrVal}`;
