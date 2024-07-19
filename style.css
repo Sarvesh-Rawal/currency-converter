@@ -97,7 +97,7 @@ form select{
 }
 
 .hide{
-    visibility: ;
+    visibility: hidden;
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
